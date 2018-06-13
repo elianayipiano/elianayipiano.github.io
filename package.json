@@ -45,9 +45,9 @@
       "test": "test"
     }
   },
-  "homepage": "https://html5boilerplate.com/",
+  "homepage": "https://elianatipiano.com/",
   "license": "MIT",
-  "name": "html5-boilerplate",
+  "name": "eliana-yi-piano",
   "scripts": {
     "build": "gulp build",
     "test": "gulp archive && mocha --require babel-core/register --reporter spec --timeout 5000"
@@ -64,6 +64,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/h5bp/html5-boilerplate.git"
+    "url": "https://github.com/elianayipiano/elianayipiano.github.io.git"
   }
 }
