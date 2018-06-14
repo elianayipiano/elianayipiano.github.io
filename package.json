@@ -1,69 +1,45 @@
 {
-  "devDependencies": {
-    "@alrra/travis-scripts": "^3.0.1",
-    "apache-server-configs": "^3.0.0",
-    "archiver": "^2.1.1",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "del": "^3.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-recommended": "^2.0.0",
-    "eslint-plugin-mocha": "^5.0.0",
-    "glob": "^7.1.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-eslint": "^4.0.2",
-    "gulp-header": "^2.0.5",
-    "gulp-jscs": "^4.1.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-rename": "^1.2.3",
-    "gulp-replace": "^1.0.0",
-    "jquery": "3.3.1",
-    "mocha": "^5.2.0",
-    "modernizr": "3.6.0",
-    "normalize.css": "8.0.0",
-    "run-sequence": "^2.2.1",
-    "ssri": "^6.0.0",
-    "strip-json-comments": "^2.0.1",
-    "travis-after-all": "^1.4.5"
-  },
-  "engines": {
-    "node": ">=6",
-    "npm": ">=3"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
-  "h5bp-configs": {
-    "directories": {
-      "archive": "archive",
-      "dist": "dist",
-      "src": "src",
-      "test": "test"
+    "title": "Creative",
+    "name": "startbootstrap-creative",
+    "version": "4.1.1",
+    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/creative",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.1.1",
+        "font-awesome": "4.7.0",
+        "jquery": "3.3.1",
+        "jquery.easing": "^1.4.1",
+        "magnific-popup": "^1.1.0",
+        "scrollreveal": "3.4.0"
+    },
+    "devDependencies": {
+        "browser-sync": "2.24.3",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.9.4",
+        "gulp-header": "2.0.5",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "4.0.1",
+        "gulp-uglify": "3.0.0"
     }
-  },
-  "homepage": "https://elianatipiano.com/",
-  "license": "MIT",
-  "name": "eliana-yi-piano",
-  "scripts": {
-    "build": "gulp build",
-    "test": "gulp archive && mocha --require babel-core/register --reporter spec --timeout 5000"
-  },
-  "version": "6.1.0",
-  "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
-  "files": [
-    "CHANGELOG.md",
-    "LICENSE.txt",
-    "package.json",
-    "dist/",
-    "modernizr-config.json",
-    "README.md"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/elianayipiano/elianayipiano.github.io.git"
-  }
 }
