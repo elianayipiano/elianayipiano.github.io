@@ -10,18 +10,11 @@
 
     <title>Eliana Yi Piano</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
 
   </head>
@@ -48,6 +41,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#connect">Connect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
             </li>
           </ul>
         </div>
@@ -79,6 +75,7 @@
       </div>
     </header>
 
+    <!-- About Section -->
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
@@ -100,6 +97,7 @@
       </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services">
       <div class="container">
         <div class="row">
@@ -143,8 +141,13 @@
       </div>
     </section>
 
+    <!-- Gallery Section -->
     <section class="p-0" id="gallery">
       <div class="container-fluid p-0">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Gallery</h2>
+            <hr class="my-4">
+      </div>
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/piano_front.jpg">
@@ -222,8 +225,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/grand1.jpg">
-              <img class="img-fluid" src="img/grand1.jpg" alt="">
+            <a class="portfolio-box" href="img/group1.jpg">
+              <img class="img-fluid" src="img/group1.jpg" alt="">
               <!-- <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -239,21 +242,14 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
-      </div>
-    </section> -->
-
+    
+    <!-- Connect Section -->
     <section id="connect">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Let's Get In Touch!</h2>
             <hr class="my-4">
-
 
             <div id="wufoo-zc8qkvy0xqsz3j">
               Fill out my <a href="https://elgoat.wufoo.com/forms/zc8qkvy0xqsz3j">online form</a>.
@@ -281,15 +277,116 @@
       </div>
     </section>
 
+    <!-- Blog Section -->
     <section class="bg-primary" id="blog">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col-lg-10 mx-auto text-center">
             <h2 class="section-heading text-white">Blog</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4"><b> insert the scrolling blog carousel here, blogs will popup modally</b></p> 
+
+            <div class="container" >
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                  <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/tiny.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/tiny.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/tiny.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/tiny.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/tiny.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/tiny.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+          </div>
+
+            <!-- <p class="text-faded mb-4"><b> insert the scrolling blog carousel here, blogs will popup modally</b></p> 
             <p class="text-faded mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-            <p class="text-faded mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+            <p class="text-faded mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  -->
           </div>
         </div>
       </div>
@@ -310,13 +407,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
     <script src="js/creative.js"></script>
 
   </body>

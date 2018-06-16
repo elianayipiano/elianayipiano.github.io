@@ -1,12 +1,12 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* #F05F40 */
 body,
 html {
   width: 100%;
   height: 100%;
-}
-
-body {
-  /* font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; */
 }
 
 hr {
@@ -30,14 +30,6 @@ a:hover {
   color: #636e72;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; */
-}
 
 .bg-primary {
   background-color: #636e72 !important;
@@ -52,7 +44,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .section-heading {
@@ -84,7 +76,6 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  /* font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; */
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -94,7 +85,6 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #636e72;
-  /* font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; */
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -253,7 +243,6 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  /* font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; */
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -292,7 +281,6 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  /* font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; */
 }
 
 .btn-xl {
@@ -313,7 +301,86 @@ header.masthead p {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 
-/* TODO actually do the fonts right */
-* {
-  font-family: 'Roboto', sans-serif;
+/* Connect Section */
+
+/* Blog Section */
+
+@media (min-width: 768px) {
+
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+      display: block;
+  }
+  
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+      transition: none;
+  }
+  
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(50%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+
 }
+
+
+/* Bootstrap Lightbox using Modal */
+
+#profile-grid { overflow: auto; white-space: normal; } 
+#profile-grid .profile { padding-bottom: 40px; }
+#profile-grid .panel { padding: 0 }
+#profile-grid .panel-body { padding: 15px }
+#profile-grid .profile-name { font-weight: bold; }
+#profile-grid .thumbnail {margin-bottom:6px;}
+#profile-grid .panel-thumbnail { overflow: hidden; }
+#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
