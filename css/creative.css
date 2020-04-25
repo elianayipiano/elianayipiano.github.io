@@ -160,7 +160,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/eliana_junior_recital.jpg");
+  background-image: url("../img/front_cover.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -294,11 +294,12 @@ header.masthead p {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: #6e777a !important;
 }
 
-.btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #393c3d !important;
+  background-color: #393c3d !important;
 }
 
 /* Connect Section */
@@ -316,3 +317,7 @@ header.masthead p {
 #profile-grid .thumbnail {margin-bottom:6px;}
 #profile-grid .panel-thumbnail { overflow: hidden; }
 #profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+
+.carousel-item.active {
+  display:block;
+}
