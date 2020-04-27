@@ -29,7 +29,7 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+    if ($("#mainNav").offset().top > 25) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
@@ -73,26 +73,26 @@
     }
   });
 
-  //Carousel Section
-  $('#myCarousel').on('slide.bs.carousel', function (e) {
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 4;
-    var totalItems = $('.carousel-item').length;
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-      var it = itemsPerSlide - (totalItems - idx);
-      for (var i=0; i<it; i++) {
-        // append slides to end
-        if (e.direction=="left") {
-          $('.carousel-item').eq(i).appendTo('.carousel-inner');
-        } else {
-          $('.carousel-item').eq(0).appendTo('.carousel-inner');
-        }
-      }
-    }
-  });
+  // //Carousel Section
+  // $('#myCarousel').on('slide.bs.carousel', function (e) {
+  //   var $e = $(e.relatedTarget);
+  //   var idx = $e.index();
+  //   var itemsPerSlide = 4;
+  //   var totalItems = $('.carousel-item').length;
+  //   if (idx >= totalItems-(itemsPerSlide-1)) {
+  //     var it = itemsPerSlide - (totalItems - idx);
+  //     for (var i=0; i<it; i++) {
+  //       // append slides to end
+  //       if (e.direction=="left") {
+  //         $('.carousel-item').eq(i).appendTo('.carousel-inner');
+  //       } else {
+  //         $('.carousel-item').eq(0).appendTo('.carousel-inner');
+  //       }
+  //     }
+  //   }
+  // });
 
-  $('#myCarousel').carousel({ interval: 2000});
+  // $('#myCarousel').carousel({ interval: 2000});
 
   // $(document).ready(function() {
   //   /* show lightbox when clicking a thumbnail */
@@ -108,3 +108,48 @@
   // });
 
 })(jQuery); // End of use strict
+
+
+
+
+//normalize carousel height
+// Normalize Carousel Heights - pass in Bootstrap Carousel items.
+$.fn.carouselHeights = function() {
+
+  var items = $(this), //grab all slides
+      heights = [], //create empty array to store height values
+      tallest; //create variable to make note of the tallest slide
+
+  var normalizeHeights = function() {
+
+      items.each(function() { //add heights to array
+          heights.push($(this).height()); 
+      });
+      tallest = Math.max.apply(null, heights); //cache largest value
+      items.each(function() {
+          $(this).css('min-height',tallest + 'px');
+      });
+  };
+
+  normalizeHeights();
+
+  $(window).on('resize orientationchange', function () {
+      //reset vars
+      tallest = 0;
+      heights.length = 0;
+
+      items.each(function() {
+          $(this).css('min-height','0'); //reset min-height
+      }); 
+      normalizeHeights(); //run it again 
+  });
+
+};
+
+jQuery(function($){
+
+  $(window).on('load', function(){
+      $('#reviewsCarousel .carousel-item').carouselHeights();
+  });
+
+});
