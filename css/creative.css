@@ -337,4 +337,6 @@ header.masthead p {
   max-width: 100%;
 } */
 
-body: 100%;
+button.btn-link {
+  color: black;
+}
